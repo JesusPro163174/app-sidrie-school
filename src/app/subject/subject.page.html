@@ -1,0 +1,60 @@
+<ion-header>
+    <ion-toolbar class="container" color="danger">
+        <ion-buttons slot="start">
+            <ion-icon routerLink="/home" class="font-md" name="arrow-round-back"></ion-icon>
+        </ion-buttons>
+        <ion-title>
+            
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-card class="welcome-card" [style.background]="'url(' + subject.cover_page + ')'"
+        [style.background-size]="'cover'" [style.text-align]="'left'" [style.background-repeat]="'no-repeat'">
+        <ion-card-header>
+            <ion-card-title class="text-white">{{subject.name}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-card-subtitle class="text-white">{{subject.grade}} cuatrimestre</ion-card-subtitle>
+        </ion-card-content>
+    </ion-card>
+    <ion-list>
+        <ion-list-header>
+            Horario
+        </ion-list-header>
+
+        <ion-item *ngFor="let time of schedule">
+            <ion-avatar slot="start">
+                <img src="https://image.flaticon.com/icons/svg/59/59252.svg">
+            </ion-avatar>
+            <ion-label>
+                <h3>{{time.day}}</h3>
+                <p>{{time.from}} - {{time.to}}</p>
+            </ion-label>
+        </ion-item>
+    </ion-list>
+    <ion-tabs style="position:fixed;">
+        <ion-tab-bar slot="bottom">
+            <ion-tab-button tab="/subject">
+                <ion-icon color="danger" name="calendar"></ion-icon>
+                <ion-label color="danger">Horario</ion-label>
+            </ion-tab-button>
+
+            <ion-tab-button routerLink="/students/actives">
+                <ion-icon name="contacts"></ion-icon>
+                <ion-label>Alumnos</ion-label>
+            </ion-tab-button>
+
+            <ion-tab-button tab="map">
+                <ion-icon name="map"></ion-icon>
+                <ion-label>Lista</ion-label>
+            </ion-tab-button>
+
+            <ion-tab-button tab="about">
+                <ion-icon name="information-circle"></ion-icon>
+                <ion-label>Acerca de</ion-label>
+            </ion-tab-button>
+        </ion-tab-bar>
+
+    </ion-tabs>
+</ion-content>

@@ -1,0 +1,37 @@
+<ion-header>
+    <ion-toolbar class="container" color="danger">
+        <ion-buttons slot="start">
+            <ion-icon routerLink="/home" class="font-md" name="arrow-round-back"></ion-icon>
+        </ion-buttons>
+        <ion-title>
+            
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-tabs style="position:fixed;">
+        <ion-tab-bar slot="bottom">
+            <ion-tab-button tab="/subject">
+                <ion-icon  name="calendar"></ion-icon>
+                <ion-label>Horario</ion-label>
+            </ion-tab-button>
+
+            <ion-tab-button routerLink="/students/actives">
+                <ion-icon color="danger" name="contacts"></ion-icon>
+                <ion-label color="danger">Alumnos</ion-label>
+            </ion-tab-button>
+
+            <ion-tab-button tab="map">
+                <ion-icon name="map"></ion-icon>
+                <ion-label>Lista</ion-label>
+            </ion-tab-button>
+
+            <ion-tab-button tab="about">
+                <ion-icon name="information-circle"></ion-icon>
+                <ion-label>Acerca de</ion-label>
+            </ion-tab-button>
+        </ion-tab-bar>
+
+    </ion-tabs>
+</ion-content>
