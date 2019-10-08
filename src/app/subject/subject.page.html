@@ -3,13 +3,13 @@
         <ion-buttons slot="start">
             <ion-icon routerLink="/home" class="font-md" name="arrow-round-back"></ion-icon>
         </ion-buttons>
-        <ion-title>
-            
-        </ion-title>
+        <ion-buttons slot="end">
+            <ion-icon class="font-md c-pointer" name="person-add"></ion-icon>
+        </ion-buttons>
     </ion-toolbar>
 </ion-header>
 <ion-content>
-    <ion-card class="welcome-card" [style.background]="'url(' + subject.cover_page + ')'"
+    <ion-card class="welcome-card card-hg" [style.background]="'url(' + subject.cover_page + ')'"
         [style.background-size]="'cover'" [style.text-align]="'left'" [style.background-repeat]="'no-repeat'">
         <ion-card-header>
             <ion-card-title class="text-white">{{subject.name}}</ion-card-title>
