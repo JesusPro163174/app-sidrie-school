@@ -5,7 +5,7 @@ export const studentsActivesTest = [
         "nombre":"Jesús Alberto",
         "apellido":"Gonzalez",
         "status":"ordinario",
-        "avatar":"https://image.flaticon.com/icons/svg/201/201565.svg"
+        "avatar":"https://image.flaticon.com/icons/svg/2097/2097180.svg"
     },
     {
         "id":2,
@@ -13,7 +13,7 @@ export const studentsActivesTest = [
         "nombre":"Adrian",
         "apellido":"Morales",
         "status":"ordinario",
-        "avatar":"https://image.flaticon.com/icons/svg/201/201565.svg"
+        "avatar":"https://image.flaticon.com/icons/svg/2097/2097180.svg"
     },
     {
         "id":3,
@@ -21,7 +21,7 @@ export const studentsActivesTest = [
         "nombre":"Miltón",
         "apellido":"Hernandez",
         "status":"ordinario",
-        "avatar":"https://image.flaticon.com/icons/svg/201/201565.svg"
+        "avatar":"https://image.flaticon.com/icons/svg/2097/2097180.svg"
     },
     {
         "id":4,
@@ -29,7 +29,7 @@ export const studentsActivesTest = [
         "nombre":"Alexis",
         "apellido":"Bartolón",
         "status":"ordinario",
-        "avatar":"https://image.flaticon.com/icons/svg/201/201565.svg"
+        "avatar":"https://image.flaticon.com/icons/svg/2097/2097180.svg"
     },
     {
         "id":5,
@@ -37,7 +37,7 @@ export const studentsActivesTest = [
         "nombre":"Linderman",
         "apellido":"Ordoñez",
         "status":"ordinario",
-        "avatar":"https://image.flaticon.com/icons/svg/201/201565.svg"
+        "avatar":"https://image.flaticon.com/icons/svg/2097/2097180.svg"
     },
     {
         "id":6,
@@ -45,6 +45,6 @@ export const studentsActivesTest = [
         "nombre":"Eliezer",
         "apellido":"Jerez",
         "status":"ordinario",
-        "avatar":"https://image.flaticon.com/icons/svg/201/201565.svg"
+        "avatar":"https://image.flaticon.com/icons/svg/2097/2097180.svg"
     }
 ];
