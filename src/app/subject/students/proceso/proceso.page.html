@@ -1,18 +1,16 @@
 <ion-header>
-    <ion-toolbar class="container" color="danger">
+    <ion-toolbar color="danger">
         <ion-buttons slot="start">
             <ion-icon routerLink="/subject" class="font-md" name="arrow-round-back"></ion-icon>
         </ion-buttons>
-        <ion-title>
-            Alumnos Inscritos
-        </ion-title>
+        <ion-title>Proceso de inscripción</ion-title>
     </ion-toolbar>
 </ion-header>
 
 <ion-content>
     <!--students list-->
     <ion-list-header>
-        Estudiantes inscritos
+        Estudiantes en proceso de inscripción
     </ion-list-header>
     <ion-searchbar animated placeholder="Buscar alumno"></ion-searchbar>
     <ion-list>
@@ -25,21 +23,22 @@
                 <p>{{student.status}}</p>
             </ion-label>
         </ion-item>
-    </ion-list>    
+    </ion-list>
+    
     <!--navigation-->
     <ion-tabs style="position:fixed;">
         <ion-tab-bar slot="bottom">
-            <ion-tab-button tab="/subject">
-                <ion-icon color="danger" name="contacts"></ion-icon>
-                <ion-label color="danger">Inscritos</ion-label>
+            <ion-tab-button routerLink="/students/actives">
+                <ion-icon name="contacts"></ion-icon>
+                <ion-label>Inscritos</ion-label>
             </ion-tab-button>
 
             <ion-tab-button routerLink="/students/proceso">
-                <ion-icon name="contacts"></ion-icon>
-                <ion-label>Proceso</ion-label>
+                <ion-icon color="danger" name="contacts"></ion-icon>
+                <ion-label color="danger">Proceso</ion-label>
             </ion-tab-button>
 
-            <ion-tab-button tab="map">
+            <ion-tab-button routerLink="/students/convalidacion">
                 <ion-icon name="contacts"></ion-icon>
                 <ion-label>Convalidación</ion-label>
             </ion-tab-button>

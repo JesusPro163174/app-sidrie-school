@@ -1,0 +1,79 @@
+<ion-header>
+    <ion-toolbar color="danger">
+        <ion-buttons slot="start">
+            <ion-icon routerLink="/subject" class="font-md" name="arrow-round-back"></ion-icon>
+        </ion-buttons>
+        <ion-title>Agregar nuevo alumno</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <form action="">
+        <ion-card>
+            <ion-item>
+                <ion-label>Estatus del estudiante</ion-label>
+                <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" placeholder="Seleccionar">
+                    <ion-select-option value="brown">Convalidante</ion-select-option>
+                    <ion-select-option value="blonde">Proceso de inscripción</ion-select-option>
+                    <ion-select-option value="black">Oyentes</ion-select-option>
+                </ion-select>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Nombre del alumno</ion-label>
+                <ion-input placeholder="Ingresa el nombre del alumno"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Apellido Paterno</ion-label>
+                <ion-input placeholder="Ingresa el apellido del alumno"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Apellido Materno</ion-label>
+                <ion-input placeholder="Ingresa el apellido materno del alumno"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Email del alumno</ion-label>
+                <ion-input placeholder="Ingresa el email del alumno"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Matricula del alumno</ion-label>
+                <ion-input placeholder="Ingresa la matricula del alumno"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Descripción</ion-label>
+                <ion-textarea rows="6" cols="20"
+                    placeholder="Ingresa una breve descripción del porque se esta registrando al alumno"></ion-textarea>
+            </ion-item>
+            <ion-item>
+                <ion-button (click)="onCreate()" expand="block" color="danger" fill="outline">
+                    Registrar
+                    <ion-icon slot="start" name="add"></ion-icon>
+                </ion-button>
+            </ion-item>
+        </ion-card>
+    </form>
+    <!--navigation-->
+    <ion-tabs style="position:fixed;">
+        <ion-tab-bar slot="bottom">
+            <ion-tab-button tab="/subject">
+                <ion-icon name="contacts"></ion-icon>
+                <ion-label>Inscritos</ion-label>
+            </ion-tab-button>
+
+            <ion-tab-button routerLink="/students/proceso">
+                <ion-icon name="contacts"></ion-icon>
+                <ion-label>Proceso</ion-label>
+            </ion-tab-button>
+
+            <ion-tab-button routerLink="/students/convalidacion">
+                <ion-icon name="contacts"></ion-icon>
+                <ion-label>Convalidación</ion-label>
+            </ion-tab-button>
+
+            <ion-tab-button routerLink="/students/add-student">
+                <ion-icon color="danger" name="person-add"></ion-icon>
+                <ion-label color="danger">Nuevo</ion-label>
+            </ion-tab-button>
+        </ion-tab-bar>
+    </ion-tabs>
+</ion-content>
